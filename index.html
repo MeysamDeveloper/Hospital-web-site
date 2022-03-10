@@ -5,7 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hospital Site</title>
-
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link href="bootstrap.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
@@ -14,7 +13,7 @@
 </head>
 <body style="font-family: Arial, Helvetica, sans-serif;">
     <header>
-        <nav class="navbar navbar-expand-sm navbar-light bg-light">
+        <nav class="navbar navbar-expand-sm navbar-light bg-light fix-head" id="headID">
             <div class="container">
                 <a href="#" class="navbar-brand">HealthCare</a>
                 <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#collapseID">
@@ -90,12 +89,14 @@
     <script src="bootstrap.bundle.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
 
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="app.js"></script>
     <script>
         AOS.init({
-            duration:1000,
-            delay:400
+            duration:400,
+            delay:20
         });
+        
     </script>
 </body>
 </html>
